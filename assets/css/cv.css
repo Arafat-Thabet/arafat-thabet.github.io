@@ -1,0 +1,50 @@
+@page {
+    size: A4;
+    margin: 14mm;
+}
+
+@media print {
+    body {
+        background: #fff;
+        font-size: 10.5pt;
+        color: #1e293b;
+    }
+
+    .cv-toolbar {
+        display: none !important;
+    }
+
+    .cv-page {
+        box-shadow: none !important;
+        border: none !important;
+        max-width: none !important;
+        padding: 0 !important;
+    }
+
+    a[href^='http']::after,
+    a[href^='mailto']::after {
+        content: none;
+    }
+}
+
+.cv-page {
+    max-width: 210mm;
+    margin: 0 auto;
+}
+
+.cv-header {
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.cv-section-title {
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.cv-list li {
+    margin-bottom: 0.35rem;
+}

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full-stack developer building multi-tenant Laravel SaaS, Vue.js apps, and REST APIs.">
+    <meta name="author" content="Arafat Thabet">
+    <title>Arafat Thabet | Full-Stack Web Developer</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3EAT%3C/text%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        accent: '#ea580c',
+                        surface: '#f8fafc',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'IBM Plex Sans Arabic', 'system-ui', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body class="antialiased text-slate-800">
+    <a href="#main" class="skip-link" data-i18n="skip">Skip to main content</a>
+
+    <header class="glass-nav no-print fixed inset-x-0 top-0 z-50">
+        <nav class="relative mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6" aria-label="Primary">
+            <a href="#hero" class="text-lg font-bold text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Arafat Thabet</a>
+            <button type="button" id="nav-toggle" class="rounded-lg border border-slate-200 p-2 text-slate-700 cursor-pointer lg:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" aria-expanded="false" aria-controls="nav-menu">
+                <span class="sr-only">Menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+            <div id="nav-menu" class="absolute left-0 right-0 top-full hidden flex-col gap-3 border-b border-slate-200 bg-white/95 px-4 py-4 backdrop-blur lg:static lg:flex lg:w-auto lg:flex-row lg:items-center lg:border-0 lg:bg-transparent lg:p-0">
+                <a href="#about" class="nav-link" data-i18n="navAbout">About</a>
+                <a href="#skills" class="nav-link" data-i18n="navSkills">Skills</a>
+                <a href="#work" class="nav-link" data-i18n="navWork">Work</a>
+                <a href="#experience" class="nav-link" data-i18n="navExperience">Experience</a>
+                <a href="#education" class="nav-link" data-i18n="navEducation">Education</a>
+                <a href="#contact" class="nav-link" data-i18n="navContact">Contact</a>
+                <a href="cv.html" class="nav-link" data-i18n="navCv">CV</a>
+                <button type="button" id="lang-toggle" class="rounded-lg border border-slate-200 px-3 py-1.5 text-sm font-semibold text-primary cursor-pointer transition hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">العربية</button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="hero" class="hero-glow pt-28 pb-16 sm:pt-32 sm:pb-20">
+            <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr]">
+                <div class="order-2 lg:order-1">
+                    <p class="mb-2 text-sm font-semibold uppercase tracking-wide text-primary" data-i18n="location">Sana'a, Yemen · Remote</p>
+                    <h1 class="mb-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">Arafat Thabet</h1>
+                    <p class="mb-4 text-xl font-semibold text-slate-700" data-i18n="role">Full-Stack Web Developer</p>
+                    <p class="mb-8 max-w-xl text-lg leading-relaxed text-slate-600" data-i18n="heroSummary">Full-stack developer with 8+ years building cloud business systems, multi-tenant Laravel SaaS, Vue.js applications, and REST APIs for web and mobile.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="#contact" class="btn-primary no-underline" data-i18n="ctaContact">Contact me</a>
+                        <a href="cv.html" class="btn-secondary no-underline" data-i18n="ctaCv">Open CV / Print</a>
+                    </div>
+                </div>
+                <div class="order-1 flex justify-center lg:order-2">
+                    <div class="portrait-frame glass-card max-w-sm overflow-hidden rounded-2xl bg-white p-2">
+                        <img src="assets/img/portrait.jpg" alt="Arafat Thabet" width="480" height="640" class="block h-auto w-full max-h-[28rem] rounded-xl object-cover object-top" loading="eager" decoding="async">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 sm:py-20">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6">
+                <h2 class="mb-6 text-3xl font-bold text-slate-900" data-i18n="aboutTitle">About</h2>
+                <div class="glass-card max-w-3xl rounded-2xl p-6 sm:p-8">
+                    <p class="mb-4 text-lg leading-relaxed text-slate-600" data-i18n="aboutP1"></p>
+                    <p class="text-lg leading-relaxed text-slate-600" data-i18n="aboutP2"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="bg-white py-16 sm:py-20">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6">
+                <h2 class="mb-8 text-3xl font-bold text-slate-900" data-i18n="skillsTitle">Skills</h2>
+                <div class="grid gap-6 md:grid-cols-2">
+                    <div class="glass-card rounded-2xl p-6">
+                        <h3 class="mb-4 text-lg font-semibold text-slate-900" data-i18n="skillsBackend">Backend</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">Filament</span><span class="chip">Livewire</span><span class="chip">REST APIs</span><span class="chip">MySQL</span><span class="chip">Multi-tenant SaaS</span>
+                        </div>
+                    </div>
+                    <div class="glass-card rounded-2xl p-6">
+                        <h3 class="mb-4 text-lg font-semibold text-slate-900" data-i18n="skillsFrontend">Frontend</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="chip">Vue.js</span><span class="chip">JavaScript</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="glass-card rounded-2xl p-6">
+                        <h3 class="mb-4 text-lg font-semibold text-slate-900" data-i18n="skillsAi">AI</h3>
+                        <p class="text-slate-600" data-i18n="aiSkill">In-app chat assistants in Laravel applications</p>
+                    </div>
+                    <div class="glass-card rounded-2xl p-6">
+                        <h3 class="mb-4 text-lg font-semibold text-slate-900" data-i18n="skillsPractices">Practices</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">GitLab</span><span class="chip">Agile</span><span class="chip">Testing</span><span class="chip">CodeIgniter</span><span class="chip">WordPress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="py-16 sm:py-20">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6">
+                <h2 class="mb-2 text-3xl font-bold text-slate-900" data-i18n="workTitle">Selected work</h2>
+                <p class="mb-10 text-slate-600" data-i18n="workSubtitle"></p>
+
+                <article class="project-featured glass-card mb-10 overflow-hidden rounded-2xl p-4 sm:p-6">
+                    <div class="mb-4 flex flex-wrap items-center gap-2">
+                        <h3 class="text-xl font-bold text-slate-900" data-i18n="projUnity">Unity ERP</h3>
+                        <span class="chip bg-primary/10 text-primary" data-i18n="projUnityChat">Includes in-app chat assistant</span>
+                    </div>
+                    <p class="mb-4 max-w-3xl text-slate-600" data-i18n="projUnityDesc"></p>
+                    <img src="assets/img/projects/unity-erp.png" alt="Unity ERP dashboard" width="1200" height="700" loading="lazy" decoding="async">
+                </article>
+
+                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <article class="project-card glass-card overflow-hidden rounded-2xl">
+                        <img src="assets/img/projects/smart-hr.jpeg" alt="Smart HR" loading="lazy" decoding="async">
+                        <div class="p-5">
+                            <h3 class="font-semibold text-slate-900" data-i18n="projSmartHr">Smart HR</h3>
+                            <p class="mt-2 text-sm text-slate-600" data-i18n="projSmartHrDesc"></p>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card overflow-hidden rounded-2xl">
+                        <img src="assets/img/projects/kidan.png" alt="Kidan dashboard" loading="lazy" decoding="async">
+                        <div class="p-5">
+                            <h3 class="font-semibold text-slate-900" data-i18n="projKidan">Kidan Support</h3>
+                            <p class="mt-2 text-sm text-slate-600" data-i18n="projKidanDesc"></p>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card overflow-hidden rounded-2xl">
+                        <img src="assets/img/projects/nadhem.png" alt="Nadhem platform" loading="lazy" decoding="async">
+                        <div class="p-5">
+                            <h3 class="font-semibold text-slate-900" data-i18n="projNadhem">Nadhem Platform</h3>
+                            <p class="mt-2 text-sm text-slate-600" data-i18n="projNadhemDesc"></p>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card overflow-hidden rounded-2xl">
+                        <img src="assets/img/projects/mopacademy.png" alt="Messengers of Peace LMS" loading="lazy" decoding="async">
+                        <div class="p-5">
+                            <h3 class="font-semibold text-slate-900" data-i18n="projMopacademy">Messengers of Peace</h3>
+                            <p class="mt-2 text-sm text-slate-600" data-i18n="projMopacademyDesc"></p>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card overflow-hidden rounded-2xl">
+                        <img src="assets/img/projects/e-store.png" alt="E-Store" loading="lazy" decoding="async">
+                        <div class="p-5">
+                            <h3 class="font-semibold text-slate-900" data-i18n="projEstore">E-Store</h3>
+                            <p class="mt-2 text-sm text-slate-600" data-i18n="projEstoreDesc"></p>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card overflow-hidden rounded-2xl">
+                        <img src="assets/img/projects/book-site.png" alt="Book landing page" loading="lazy" decoding="async">
+                        <div class="p-5">
+                            <h3 class="font-semibold text-slate-900" data-i18n="projBook">Book landing</h3>
+                            <p class="mt-2 text-sm text-slate-600" data-i18n="projBookDesc"></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="bg-white py-16 sm:py-20">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6">
+                <h2 class="mb-10 text-3xl font-bold text-slate-900" data-i18n="expTitle">Experience</h2>
+                <ol class="relative space-y-10 ps-8">
+                    <span class="timeline-line" aria-hidden="true"></span>
+                    <li class="relative">
+                        <span class="timeline-dot absolute -start-1.5 top-1.5" aria-hidden="true"></span>
+                        <div class="glass-card rounded-2xl p-6">
+                            <p class="text-sm font-semibold text-primary" data-i18n="expTechTransDate">Sep 2023 – Present</p>
+                            <h3 class="mt-1 text-xl font-bold" data-i18n="expTechTransRole">Full-Stack Web Developer</h3>
+                            <p class="text-slate-600" data-i18n="expTechTransCo">TechTrans (altqniah.sa) · Remote</p>
+                            <ul class="mt-4 list-disc space-y-2 ps-5 text-slate-600">
+                                <li data-i18n="expTechTrans1"></li>
+                                <li data-i18n="expTechTrans2"></li>
+                                <li data-i18n="expTechTrans3"></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="relative">
+                        <span class="timeline-dot absolute -start-1.5 top-1.5" aria-hidden="true"></span>
+                        <div class="glass-card rounded-2xl p-6">
+                            <p class="text-sm font-semibold text-primary" data-i18n="expSmartDate">Mar 2019 – May 2024</p>
+                            <h3 class="mt-1 text-xl font-bold" data-i18n="expSmartRole">Web & System Developer</h3>
+                            <p class="text-slate-600" data-i18n="expSmartCo">Smart Life Company · Remote</p>
+                            <ul class="mt-4 list-disc space-y-2 ps-5 text-slate-600">
+                                <li data-i18n="expSmart1"></li>
+                                <li data-i18n="expSmart2"></li>
+                                <li data-i18n="expSmart3"></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="relative">
+                        <span class="timeline-dot absolute -start-1.5 top-1.5" aria-hidden="true"></span>
+                        <div class="glass-card rounded-2xl p-6">
+                            <p class="text-sm font-semibold text-primary" data-i18n="expFreeDate">Jul 2018 – Jan 2019</p>
+                            <h3 class="mt-1 text-xl font-bold" data-i18n="expFreeRole">Freelance Web Developer</h3>
+                            <p class="text-slate-600" data-i18n="expFreeCo">Sana'a</p>
+                            <ul class="mt-4 list-disc space-y-2 ps-5 text-slate-600">
+                                <li data-i18n="expFree1"></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="relative">
+                        <span class="timeline-dot absolute -start-1.5 top-1.5" aria-hidden="true"></span>
+                        <div class="glass-card rounded-2xl p-6">
+                            <h3 class="text-xl font-bold" data-i18n="expGovRole">Web Developer</h3>
+                            <p class="text-slate-600" data-i18n="expGovCo">Sana'a Government Office · Sana'a</p>
+                            <ul class="mt-4 list-disc space-y-2 ps-5 text-slate-600">
+                                <li data-i18n="expGov1"></li>
+                                <li data-i18n="expGov2"></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="education" class="py-16 sm:py-20">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6">
+                <h2 class="mb-8 text-3xl font-bold text-slate-900" data-i18n="eduTitle">Education</h2>
+                <div class="glass-card max-w-2xl rounded-2xl p-6 sm:p-8">
+                    <h3 class="text-xl font-semibold text-slate-900" data-i18n="eduDegree">Bachelor of Science — Information Systems</h3>
+                    <p class="mt-2 text-slate-600" data-i18n="eduSchool">Sana'a University</p>
+                    <p class="mt-1 text-sm text-primary font-medium" data-i18n="eduYear">Graduated 2017</p>
+                </div>
+                <div class="mt-8 max-w-2xl">
+                    <h3 class="mb-3 text-lg font-semibold text-slate-900" data-i18n="langTitle">Languages</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li data-i18n="langAr">Arabic — Native</li>
+                        <li data-i18n="langEn">English — Professional working proficiency</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-white py-16 sm:py-20">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6">
+                <h2 class="mb-2 text-3xl font-bold text-slate-900" data-i18n="contactTitle">Let's talk</h2>
+                <p class="mb-10 text-slate-600" data-i18n="contactSubtitle"></p>
+                <div class="grid gap-6 sm:grid-cols-3">
+                    <a href="mailto:arafat.733011506@gmail.com" class="glass-card rounded-2xl p-6 no-underline transition hover:shadow-md cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                        <p class="text-sm font-semibold text-slate-500" data-i18n="contactEmail">Email</p>
+                        <p class="mt-2 font-medium text-primary break-all">arafat.733011506@gmail.com</p>
+                    </a>
+                    <a href="https://wa.me/967773633964" class="glass-card rounded-2xl p-6 no-underline transition hover:shadow-md cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" rel="noopener noreferrer" target="_blank">
+                        <p class="text-sm font-semibold text-slate-500" data-i18n="contactPhone">Phone / WhatsApp</p>
+                        <p class="mt-2 font-medium text-slate-900">+967 773 633 964</p>
+                    </a>
+                    <div class="glass-card rounded-2xl p-6">
+                        <p class="text-sm font-semibold text-slate-500" data-i18n="contactLocation">Location</p>
+                        <p class="mt-2 font-medium text-slate-900" data-i18n="location">Sana'a, Yemen · Remote</p>
+                        <p class="mt-1 text-sm text-slate-600" data-i18n="contactTimezone">Timezone: GMT+3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-200 py-8 text-center text-sm text-slate-500">
+        <p>&copy; <span id="year">2026</span> Arafat Thabet. <span data-i18n="footerRights">All rights reserved.</span></p>
+    </footer>
+
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

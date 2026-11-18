@@ -1,0 +1,208 @@
+const translations = {
+    en: {
+        metaTitle: 'Arafat Thabet | Full-Stack Web Developer',
+        metaDescription:
+            'Full-stack developer building multi-tenant Laravel SaaS, Vue.js apps, and REST APIs for cloud business systems.',
+        skip: 'Skip to main content',
+        navAbout: 'About',
+        navSkills: 'Skills',
+        navWork: 'Work',
+        navExperience: 'Experience',
+        navEducation: 'Education',
+        navContact: 'Contact',
+        navCv: 'CV',
+        role: 'Full-Stack Web Developer',
+        location: 'Sana\'a, Yemen · Remote',
+        heroSummary:
+            'Full-stack developer with 8+ years building cloud business systems, multi-tenant Laravel SaaS, Vue.js applications, and REST APIs for web and mobile.',
+        ctaContact: 'Contact me',
+        ctaCv: 'Open CV / Print',
+        aboutTitle: 'About',
+        aboutP1:
+            'I design and ship production web systems for ERP, HR, and SaaS products — from tenant-aware backends to Vue.js front ends and integration APIs.',
+        aboutP2:
+            'I work closely with QA teams, keep legacy CodeIgniter stacks stable, and focus on maintainable Laravel architecture.',
+        skillsTitle: 'Skills',
+        skillsBackend: 'Backend',
+        skillsFrontend: 'Frontend',
+        skillsAi: 'AI',
+        skillsPractices: 'Practices',
+        aiSkill: 'In-app chat assistants in Laravel applications',
+        workTitle: 'Selected work',
+        workSubtitle: 'Screenshots from shipped products (internal and client-facing).',
+        projUnity: 'Unity ERP',
+        projUnityDesc:
+            'Multi-module ERP hub: HR, sales, purchasing, inventory, accounting, and POS — with an in-app Laravel chat assistant.',
+        projUnityChat: 'Includes in-app chat assistant',
+        projSmartHr: 'Smart HR',
+        projSmartHrDesc: 'Cloud human resources system (Smart Life).',
+        projKidan: 'Kidan Support',
+        projKidanDesc: 'Support and video-meeting operations dashboard.',
+        projNadhem: 'Nadhem Platform',
+        projNadhemDesc: 'Conference registration and event web platform.',
+        projMopacademy: 'Messengers of Peace',
+        projMopacademyDesc: 'LMS and training portal front end.',
+        projEstore: 'E-Store',
+        projEstoreDesc: 'Arabic e-commerce storefront and catalog UI.',
+        projBook: 'Book landing',
+        projBookDesc: 'Marketing site for a digital book product.',
+        expTitle: 'Experience',
+        expTechTransRole: 'Full-Stack Web Developer',
+        expTechTransCo: 'TechTrans (altqniah.sa) · Remote',
+        expTechTransDate: 'Sep 2023 – Present',
+        expTechTrans1: 'Build and maintain multi-tenant Laravel SaaS products and tenant isolation patterns.',
+        expTechTrans2: 'Deliver Vue.js SPA front ends and REST APIs for web, mobile, and integrations.',
+        expTechTrans3: 'Maintain CodeIgniter systems and collaborate with QA on releases.',
+        expSmartRole: 'Web & System Developer',
+        expSmartCo: 'Smart Life Company · Remote',
+        expSmartDate: 'Mar 2019 – May 2024',
+        expSmart1: 'Planned and delivered monthly ERP module releases across Laravel and CodeIgniter.',
+        expSmart2: 'Built the Smart HR cloud system and server deployments for client sites.',
+        expSmart3: 'Closed security vulnerabilities and supported clients with maintenance and training.',
+        expFreeRole: 'Freelance Web Developer',
+        expFreeCo: 'Sana\'a',
+        expFreeDate: 'Jul 2018 – Jan 2019',
+        expFree1: 'Scoped requirements with clients and delivered sites on CodeIgniter, Laravel, or WordPress.',
+        expGovRole: 'Web Developer',
+        expGovCo: 'Sana\'a Government Office · Sana\'a',
+        expGov1: 'Modeled relational databases and implemented business processes with PHP and JavaScript.',
+        expGov2: 'Delivered web-service integrations and validation cycles with stakeholders.',
+        eduTitle: 'Education',
+        eduDegree: 'Bachelor of Science — Information Systems',
+        eduSchool: 'Sana\'a University',
+        eduYear: 'Graduated 2017',
+        langTitle: 'Languages',
+        langAr: 'Arabic — Native',
+        langEn: 'English — Professional working proficiency',
+        contactTitle: 'Let\'s talk',
+        contactSubtitle: 'Available for remote full-time roles and freelance projects.',
+        contactEmail: 'Email',
+        contactPhone: 'Phone / WhatsApp',
+        contactLocation: 'Location',
+        contactTimezone: 'Timezone: GMT+3',
+        footerRights: 'All rights reserved.',
+        langToggle: 'العربية',
+        cvBack: '← Portfolio',
+        cvPrint: 'Print / Save PDF',
+        cvContact: 'Contact',
+    },
+    ar: {
+        metaTitle: 'عرفات ثابت | مطوّر ويب متكامل',
+        metaDescription:
+            'مطوّر متكامل يبني SaaS متعدد المستأجرين على Laravel، تطبيقات Vue.js، وواجهات REST لأنظمة الأعمال السحابية.',
+        skip: 'تخطي إلى المحتوى الرئيسي',
+        navAbout: 'نبذة',
+        navSkills: 'المهارات',
+        navWork: 'الأعمال',
+        navExperience: 'الخبرة',
+        navEducation: 'التعليم',
+        navContact: 'التواصل',
+        navCv: 'السيرة',
+        role: 'مطوّر ويب متكامل',
+        location: 'صنعاء، اليمن · عن بُعد',
+        heroSummary:
+            'مطوّر متكامل بخبرة تزيد عن 8 سنوات في أنظمة الأعمال السحابية، وSaaS متعدد المستأجرين على Laravel، وتطبيقات Vue.js، وواجهات REST للويب والجوال.',
+        ctaContact: 'تواصل معي',
+        ctaCv: 'فتح السيرة / طباعة',
+        aboutTitle: 'نبذة',
+        aboutP1:
+            'أصمّم وأشحن أنظمة ويب إنتاجية لمنتجات ERP وHR وSaaS — من خوادم متعددة المستأجرين إلى واجهات Vue.js وواجهات التكامل.',
+        aboutP2:
+            'أعمل مع فرق الاختبار، وأحافظ على أنظمة CodeIgniter القديمة، وأركّز على بنية Laravel قابلة للصيانة.',
+        skillsTitle: 'المهارات',
+        skillsBackend: 'الخلفية',
+        skillsFrontend: 'الواجهة',
+        skillsAi: 'الذكاء الاصطناعي',
+        skillsPractices: 'الممارسات',
+        aiSkill: 'مساعد شات داخل تطبيقات Laravel',
+        workTitle: 'أعمال مختارة',
+        workSubtitle: 'لقطات من منتجات منشورة (داخلية وموجهة للعملاء).',
+        projUnity: 'Unity ERP',
+        projUnityDesc:
+            'مركز ERP متعدد الوحدات: موارد بشرية، مبيعات، مشتريات، مخزون، محاسبة، ونقاط بيع — مع مساعد شات داخل التطبيق على Laravel.',
+        projUnityChat: 'يتضمن مساعد شات داخل التطبيق',
+        projSmartHr: 'Smart HR',
+        projSmartHrDesc: 'نظام موارد بشرية سحابي (سمارت لايف).',
+        projKidan: 'كدان للدعم',
+        projKidanDesc: 'لوحة عمليات الدعم والاجتماعات المرئية.',
+        projNadhem: 'منصة نظم',
+        projNadhemDesc: 'منصة تسجيل مؤتمرات وفعاليات.',
+        projMopacademy: 'رسل السلام',
+        projMopacademyDesc: 'واجهة منصة تعليم وتدريب.',
+        projEstore: 'متجر إلكتروني',
+        projEstoreDesc: 'واجهة متجر عربي وكتالوج منتجات.',
+        projBook: 'صفحة كتاب',
+        projBookDesc: 'موقع تسويقي لمنتج كتاب رقمي.',
+        expTitle: 'الخبرة',
+        expTechTransRole: 'مطوّر ويب متكامل',
+        expTechTransCo: 'TechTrans (altqniah.sa) · عن بُعد',
+        expTechTransDate: 'سبتمبر 2023 – الآن',
+        expTechTrans1: 'بناء وصيانة منتجات Laravel SaaS متعددة المستأجرين وأنماط عزل المستأجرين.',
+        expTechTrans2: 'تسليم واجهات Vue.js وواجهات REST للويب والجوال والتكامل.',
+        expTechTrans3: 'صيانة أنظمة CodeIgniter والتنسيق مع فريق QA للإصدارات.',
+        expSmartRole: 'مطوّر ويب وأنظمة',
+        expSmartCo: 'شركة سمارت لايف · عن بُعد',
+        expSmartDate: 'مارس 2019 – مايو 2024',
+        expSmart1: 'تخطيط وتسليم إصدارات شهرية لوحدات ERP على Laravel وCodeIgniter.',
+        expSmart2: 'تطوير نظام Smart HR السحابي ونشر المواقع على خوادم الشركة.',
+        expSmart3: 'معالجة ثغرات أمنية ودعم العملاء بالصيانة والتدريب.',
+        expFreeRole: 'مطوّر ويب مستقل',
+        expFreeCo: 'صنعاء',
+        expFreeDate: 'يوليو 2018 – يناير 2019',
+        expFree1: 'تحديد المتطلبات مع العملاء وتسليم مواقع على CodeIgniter أو Laravel أو WordPress.',
+        expGovRole: 'مطوّر ويب',
+        expGovCo: 'مكتب أمانة العاصمة · صنعاء',
+        expGov1: 'نمذجة قواعد بيانات وتنفيذ عمليات أعمال بـ PHP وJavaScript.',
+        expGov2: 'تكامل خدمات ويب ودورات تحقق مع أصحاب المصلحة.',
+        eduTitle: 'التعليم',
+        eduDegree: 'بكالوريوس علوم — نظم معلومات',
+        eduSchool: 'جامعة صنعاء',
+        eduYear: 'تخرج 2017',
+        langTitle: 'اللغات',
+        langAr: 'العربية — لغة أم',
+        langEn: 'الإنجليزية — كفاءة عمل مهنية',
+        contactTitle: 'لنتواصل',
+        contactSubtitle: 'متاح للعمل عن بُعد دوام كامل ومشاريع مستقلة.',
+        contactEmail: 'البريد',
+        contactPhone: 'هاتف / واتساب',
+        contactLocation: 'الموقع',
+        contactTimezone: 'التوقيت: GMT+3',
+        footerRights: 'جميع الحقوق محفوظة.',
+        langToggle: 'English',
+        cvBack: '← المحفظة',
+        cvPrint: 'طباعة / حفظ PDF',
+        cvContact: 'التواصل',
+    },
+};
+
+function applyTranslations(lang) {
+    const dict = translations[lang] ?? translations.en;
+    const isAr = lang === 'ar';
+
+    document.documentElement.lang = lang;
+    document.documentElement.dir = isAr ? 'rtl' : 'ltr';
+
+  document.title = dict.metaTitle;
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) {
+      metaDesc.setAttribute('content', dict.metaDescription);
+  }
+
+  document.querySelectorAll('[data-i18n]').forEach((el) => {
+      const key = el.getAttribute('data-i18n');
+      if (dict[key] !== undefined) {
+          el.textContent = dict[key];
+      }
+  });
+
+  const langBtn = document.getElementById('lang-toggle');
+  if (langBtn) {
+      langBtn.textContent = dict.langToggle;
+      langBtn.setAttribute('aria-label', isAr ? 'Switch to English' : 'التبديل إلى العربية');
+  }
+}
+
+window.PortfolioI18n = {
+    translations,
+    applyTranslations,
+};
