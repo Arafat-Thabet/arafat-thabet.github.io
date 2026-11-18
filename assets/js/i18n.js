@@ -1,9 +1,12 @@
 const translations = {
     en: {
-        metaTitle: 'Arafat Thabet | Full-Stack Web Developer',
+        metaTitle: 'Arafat Thabet | Software Engineer',
+        metaTitleCv: 'CV | Arafat Thabet, Software Engineer',
         metaDescription:
-            'Full-stack developer building multi-tenant Laravel SaaS, Vue.js apps, and REST APIs for cloud business systems.',
+            'Software Engineer building multi-tenant Laravel SaaS, Vue.js apps, and REST APIs for cloud business systems.',
         skip: 'Skip to main content',
+        navLabel: 'Primary',
+        navMenu: 'Menu',
         navAbout: 'About',
         navSkills: 'Skills',
         navWork: 'Work',
@@ -11,13 +14,18 @@ const translations = {
         navEducation: 'Education',
         navContact: 'Contact',
         navCv: 'CV',
-        role: 'Full-Stack Web Developer',
+        personName: 'Arafat Thabet',
+        role: 'Software Engineer',
         location: 'Sana\'a, Yemen · Remote',
+        available: 'Available for remote work',
         heroSummary:
             'Full-stack developer with 8+ years building cloud business systems, multi-tenant Laravel SaaS, Vue.js applications, and REST APIs for web and mobile.',
         ctaContact: 'Contact me',
+        ctaWork: 'View work',
         ctaCv: 'Open CV / Print',
+        stackCore: 'Laravel · Multi-tenant SaaS · Vue.js',
         aboutTitle: 'About',
+        approachTitle: 'Engineering approach',
         aboutP1:
             'I design and ship production web systems for ERP, HR, and SaaS products — from tenant-aware backends to Vue.js front ends and integration APIs.',
         aboutP2:
@@ -30,6 +38,15 @@ const translations = {
         aiSkill: 'In-app chat assistants in Laravel applications',
         workTitle: 'Selected work',
         workSubtitle: 'Screenshots from shipped products (internal and client-facing).',
+        filterLabel: 'Filter projects',
+        filterAll: 'All',
+        filterErp: 'ERP & SaaS',
+        filterPlatforms: 'Platforms & Portals',
+        filterWeb: 'Web & Commerce',
+        previewFull: 'Preview full size',
+        lightboxClose: 'Close',
+        lightboxPrev: 'Previous project',
+        lightboxNext: 'Next project',
         projUnity: 'Unity ERP',
         projUnityDesc:
             'Multi-module ERP hub: HR, sales, purchasing, inventory, accounting, and POS — with an in-app Laravel chat assistant.',
@@ -46,15 +63,32 @@ const translations = {
         projEstoreDesc: 'Arabic e-commerce storefront and catalog UI.',
         projBook: 'Book landing',
         projBookDesc: 'Marketing site for a digital book product.',
+        altUnity: 'Unity ERP dashboard',
+        altSmart: 'Smart HR',
+        altKidan: 'Kidan dashboard',
+        altNadhem: 'Nadhem platform',
+        altMop: 'Messengers of Peace LMS',
+        altStore: 'E-Store',
+        altBook: 'Book landing page',
         expTitle: 'Experience',
+        yearNavLabel: 'Jump to experience',
+        yearNow: '2023–Now',
+        yearSmart: '2019–2024',
+        yearFree: '2018–2019',
+        yearGov: 'Gov Office',
+        badgeCurrent: 'CURRENT',
+        modeRemote: 'Remote',
+        modeSanaa: 'Sana\'a',
         expTechTransRole: 'Full-Stack Web Developer',
         expTechTransCo: 'TechTrans (altqniah.sa) · Remote',
+        expTechTransOrg: 'TechTrans (altqniah.sa)',
         expTechTransDate: 'Sep 2023 – Present',
         expTechTrans1: 'Build and maintain multi-tenant Laravel SaaS products and tenant isolation patterns.',
         expTechTrans2: 'Deliver Vue.js SPA front ends and REST APIs for web, mobile, and integrations.',
         expTechTrans3: 'Maintain CodeIgniter systems and collaborate with QA on releases.',
         expSmartRole: 'Web & System Developer',
         expSmartCo: 'Smart Life Company · Remote',
+        expSmartOrg: 'Smart Life Company',
         expSmartDate: 'Mar 2019 – May 2024',
         expSmart1: 'Planned and delivered monthly ERP module releases across Laravel and CodeIgniter.',
         expSmart2: 'Built the Smart HR cloud system and server deployments for client sites.',
@@ -65,6 +99,7 @@ const translations = {
         expFree1: 'Scoped requirements with clients and delivered sites on CodeIgniter, Laravel, or WordPress.',
         expGovRole: 'Web Developer',
         expGovCo: 'Sana\'a Government Office · Sana\'a',
+        expGovOrg: 'Sana\'a Government Office',
         expGov1: 'Modeled relational databases and implemented business processes with PHP and JavaScript.',
         expGov2: 'Delivered web-service integrations and validation cycles with stakeholders.',
         eduTitle: 'Education',
@@ -78,19 +113,27 @@ const translations = {
         contactSubtitle: 'Available for remote full-time roles and freelance projects.',
         contactEmail: 'Email',
         contactPhone: 'Phone / WhatsApp',
+        contactWhatsApp: 'WhatsApp',
+        contactLinkedIn: 'LinkedIn',
+        contactGithub: 'GitHub',
+        copyEmail: 'Copy email',
+        copied: 'Copied!',
         contactLocation: 'Location',
         contactTimezone: 'Timezone: GMT+3',
         footerRights: 'All rights reserved.',
         langToggle: 'العربية',
-        cvBack: '← Portfolio',
+        cvBack: 'Portfolio',
         cvPrint: 'Print / Save PDF',
         cvContact: 'Contact',
     },
     ar: {
-        metaTitle: 'عرفات ثابت | مطوّر ويب متكامل',
+        metaTitle: 'عرفات ثابت | مهندس برمجيات',
+        metaTitleCv: 'السيرة | عرفات ثابت، مهندس برمجيات',
         metaDescription:
-            'مطوّر متكامل يبني SaaS متعدد المستأجرين على Laravel، تطبيقات Vue.js، وواجهات REST لأنظمة الأعمال السحابية.',
+            'مهندس برمجيات يبني SaaS متعدد المستأجرين على Laravel، تطبيقات Vue.js، وواجهات REST لأنظمة الأعمال السحابية.',
         skip: 'تخطي إلى المحتوى الرئيسي',
+        navLabel: 'التنقل الرئيسي',
+        navMenu: 'القائمة',
         navAbout: 'نبذة',
         navSkills: 'المهارات',
         navWork: 'الأعمال',
@@ -98,13 +141,18 @@ const translations = {
         navEducation: 'التعليم',
         navContact: 'التواصل',
         navCv: 'السيرة',
-        role: 'مطوّر ويب متكامل',
+        personName: 'عرفات ثابت',
+        role: 'مهندس برمجيات',
         location: 'صنعاء، اليمن · عن بُعد',
+        available: 'متاح للعمل عن بُعد',
         heroSummary:
             'مطوّر متكامل بخبرة تزيد عن 8 سنوات في أنظمة الأعمال السحابية، وSaaS متعدد المستأجرين على Laravel، وتطبيقات Vue.js، وواجهات REST للويب والجوال.',
         ctaContact: 'تواصل معي',
+        ctaWork: 'عرض الأعمال',
         ctaCv: 'فتح السيرة / طباعة',
+        stackCore: 'Laravel · Multi-tenant SaaS · Vue.js',
         aboutTitle: 'نبذة',
+        approachTitle: 'منهج العمل',
         aboutP1:
             'أصمّم وأشحن أنظمة ويب إنتاجية لمنتجات ERP وHR وSaaS — من خوادم متعددة المستأجرين إلى واجهات Vue.js وواجهات التكامل.',
         aboutP2:
@@ -117,6 +165,15 @@ const translations = {
         aiSkill: 'مساعد شات داخل تطبيقات Laravel',
         workTitle: 'أعمال مختارة',
         workSubtitle: 'لقطات من منتجات منشورة (داخلية وموجهة للعملاء).',
+        filterLabel: 'تصفية الأعمال',
+        filterAll: 'الكل',
+        filterErp: 'ERP و SaaS',
+        filterPlatforms: 'منصات وبوابات',
+        filterWeb: 'ويب وتجارة',
+        previewFull: 'معاينة بالحجم الكامل',
+        lightboxClose: 'إغلاق',
+        lightboxPrev: 'المشروع السابق',
+        lightboxNext: 'المشروع التالي',
         projUnity: 'Unity ERP',
         projUnityDesc:
             'مركز ERP متعدد الوحدات: موارد بشرية، مبيعات، مشتريات، مخزون، محاسبة، ونقاط بيع — مع مساعد شات داخل التطبيق على Laravel.',
@@ -133,15 +190,32 @@ const translations = {
         projEstoreDesc: 'واجهة متجر عربي وكتالوج منتجات.',
         projBook: 'صفحة كتاب',
         projBookDesc: 'موقع تسويقي لمنتج كتاب رقمي.',
+        altUnity: 'لوحة Unity ERP',
+        altSmart: 'Smart HR',
+        altKidan: 'لوحة كدان',
+        altNadhem: 'منصة نظم',
+        altMop: 'منصة رسل السلام',
+        altStore: 'المتجر الإلكتروني',
+        altBook: 'صفحة الكتاب',
         expTitle: 'الخبرة',
+        yearNavLabel: 'الانتقال إلى الخبرة',
+        yearNow: '2023–الآن',
+        yearSmart: '2019–2024',
+        yearFree: '2018–2019',
+        yearGov: 'أمانة العاصمة',
+        badgeCurrent: 'حالياً',
+        modeRemote: 'عن بُعد',
+        modeSanaa: 'صنعاء',
         expTechTransRole: 'مطوّر ويب متكامل',
         expTechTransCo: 'TechTrans (altqniah.sa) · عن بُعد',
+        expTechTransOrg: 'TechTrans (altqniah.sa)',
         expTechTransDate: 'سبتمبر 2023 – الآن',
         expTechTrans1: 'بناء وصيانة منتجات Laravel SaaS متعددة المستأجرين وأنماط عزل المستأجرين.',
         expTechTrans2: 'تسليم واجهات Vue.js وواجهات REST للويب والجوال والتكامل.',
         expTechTrans3: 'صيانة أنظمة CodeIgniter والتنسيق مع فريق QA للإصدارات.',
         expSmartRole: 'مطوّر ويب وأنظمة',
         expSmartCo: 'شركة سمارت لايف · عن بُعد',
+        expSmartOrg: 'شركة سمارت لايف',
         expSmartDate: 'مارس 2019 – مايو 2024',
         expSmart1: 'تخطيط وتسليم إصدارات شهرية لوحدات ERP على Laravel وCodeIgniter.',
         expSmart2: 'تطوير نظام Smart HR السحابي ونشر المواقع على خوادم الشركة.',
@@ -152,6 +226,7 @@ const translations = {
         expFree1: 'تحديد المتطلبات مع العملاء وتسليم مواقع على CodeIgniter أو Laravel أو WordPress.',
         expGovRole: 'مطوّر ويب',
         expGovCo: 'مكتب أمانة العاصمة · صنعاء',
+        expGovOrg: 'مكتب أمانة العاصمة',
         expGov1: 'نمذجة قواعد بيانات وتنفيذ عمليات أعمال بـ PHP وJavaScript.',
         expGov2: 'تكامل خدمات ويب ودورات تحقق مع أصحاب المصلحة.',
         eduTitle: 'التعليم',
@@ -165,11 +240,16 @@ const translations = {
         contactSubtitle: 'متاح للعمل عن بُعد دوام كامل ومشاريع مستقلة.',
         contactEmail: 'البريد',
         contactPhone: 'هاتف / واتساب',
+        contactWhatsApp: 'واتساب',
+        contactLinkedIn: 'لينكد إن',
+        contactGithub: 'GitHub',
+        copyEmail: 'نسخ البريد',
+        copied: 'تم النسخ',
         contactLocation: 'الموقع',
         contactTimezone: 'التوقيت: GMT+3',
         footerRights: 'جميع الحقوق محفوظة.',
         langToggle: 'English',
-        cvBack: '← المحفظة',
+        cvBack: 'المحفظة',
         cvPrint: 'طباعة / حفظ PDF',
         cvContact: 'التواصل',
     },
@@ -182,24 +262,41 @@ function applyTranslations(lang) {
     document.documentElement.lang = lang;
     document.documentElement.dir = isAr ? 'rtl' : 'ltr';
 
-  document.title = dict.metaTitle;
-  const metaDesc = document.querySelector('meta[name="description"]');
-  if (metaDesc) {
-      metaDesc.setAttribute('content', dict.metaDescription);
-  }
+    const titleKey = document.body && document.body.dataset.page === 'cv' ? 'metaTitleCv' : 'metaTitle';
+    document.title = dict[titleKey] || dict.metaTitle;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+        metaDesc.setAttribute('content', dict.metaDescription);
+    }
 
-  document.querySelectorAll('[data-i18n]').forEach((el) => {
-      const key = el.getAttribute('data-i18n');
-      if (dict[key] !== undefined) {
-          el.textContent = dict[key];
-      }
-  });
+    document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key] !== undefined) {
+            el.textContent = dict[key];
+        }
+    });
 
-  const langBtn = document.getElementById('lang-toggle');
-  if (langBtn) {
-      langBtn.textContent = dict.langToggle;
-      langBtn.setAttribute('aria-label', isAr ? 'Switch to English' : 'التبديل إلى العربية');
-  }
+    document.querySelectorAll('[data-i18n-aria]').forEach((el) => {
+        const key = el.getAttribute('data-i18n-aria');
+        if (dict[key] !== undefined) {
+            el.setAttribute('aria-label', dict[key]);
+        }
+    });
+
+    document.querySelectorAll('[data-i18n-alt]').forEach((el) => {
+        const key = el.getAttribute('data-i18n-alt');
+        if (dict[key] !== undefined) {
+            el.alt = dict[key];
+        }
+    });
+
+    const langBtn = document.getElementById('lang-toggle');
+    if (langBtn) {
+        langBtn.textContent = dict.langToggle;
+        langBtn.setAttribute('aria-label', isAr ? 'Switch to English' : 'التبديل إلى العربية');
+    }
+
+    document.dispatchEvent(new CustomEvent('portfolio:lang', { detail: { lang } }));
 }
 
 window.PortfolioI18n = {
