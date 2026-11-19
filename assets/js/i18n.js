@@ -23,7 +23,7 @@ const translations = {
         ctaWork: 'View work',
         ctaCvOpen: 'Open resume',
         ctaCvDownload: 'Download CV',
-        stackCore: 'Software Engineer (Laravel ·  SaaS · Vue.js)',
+        stackCore: 'Software Engineer (Laravel,Vue.js)',
         aboutTitle: 'About',
         approachTitle: 'Engineering approach',
         aboutP1:
@@ -156,7 +156,7 @@ const translations = {
         ctaWork: 'عرض الأعمال',
         ctaCvOpen: 'فتح السيرة',
         ctaCvDownload: 'تحميل السيرة',
-        stackCore: 'Software Engineer (Laravel · SaaS · Vue.js)',
+        stackCore: 'Software Engineer (Laravel , Vue.js)',
         aboutTitle: 'نبذة',
         approachTitle: 'منهج العمل',
         aboutP1:
