@@ -369,32 +369,26 @@
     }
 
     function hideCard(card) {
-        card.classList.remove('is-shown');
-        if (reduceMotion.matches) {
-            card.hidden = true;
+        if (card.classList.contains('is-featured')) {
             return;
         }
-        const finish = (event) => {
-            if (event && event.target && (event.target !== card || event.propertyName !== 'opacity')) {
-                return;
-            }
-            card.removeEventListener('transitionend', finish);
-            if (!card.classList.contains('is-shown')) {
-                card.hidden = true;
-            }
-        };
-        card.addEventListener('transitionend', finish);
-        window.setTimeout(finish, 420);
+        card.classList.remove('is-shown');
+        card.classList.add('is-filtered-out');
+        card.hidden = true;
     }
 
     function showCard(card) {
+        card.classList.remove('is-filtered-out');
         card.hidden = false;
+        card.classList.remove('is-shown');
         if (reduceMotion.matches) {
             card.classList.add('is-shown');
             return;
         }
         requestAnimationFrame(() => {
-            card.classList.add('is-shown');
+            requestAnimationFrame(() => {
+                card.classList.add('is-shown');
+            });
         });
     }
 
@@ -415,6 +409,10 @@
                 btn.tabIndex = on ? 0 : -1;
             });
             cards.forEach((card) => {
+                if (card.classList.contains('is-featured')) {
+                    showCard(card);
+                    return;
+                }
                 const show = key === 'all' || card.dataset.category === key;
                 if (show) {
                     showCard(card);

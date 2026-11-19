@@ -249,6 +249,19 @@ html[lang='ar'] .eyebrow, html[lang='ar'] .current-badge, html[lang='ar'] .mode-
     transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 .chip-accent { background: rgba(37, 99, 235, 0.08); color: #1d4ed8; border-color: rgba(37, 99, 235, 0.2); }
+.chip-private {
+    background: rgba(15, 23, 42, 0.05);
+    color: #475569;
+    border-color: rgba(15, 23, 42, 0.12);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+}
+html[lang='ar'] .chip-private {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 0.8125rem;
+    letter-spacing: 0;
+}
 .chat-ui { margin-top: 1rem; border: 1px solid var(--color-border); border-radius: 0.9rem; background: #f8fafc; pointer-events: none; }
 .chat-ui-bar, .browser-bar {
     display: flex; align-items: center; gap: 0.35rem; height: 1.7rem; padding-inline: 0.6rem;
@@ -530,6 +543,30 @@ html[lang='ar'] .method-info {
     width: 100%;
     max-width: 16rem;
 }
+a.method-action.whatsapp-action-btn,
+button.method-action.copy-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-direction: row;
+    min-height: 44px;
+    padding: 0.55rem 1rem;
+    box-sizing: border-box;
+    line-height: 1.25;
+    text-decoration: none;
+}
+html[dir='rtl'] a.method-action.whatsapp-action-btn,
+html[dir='rtl'] button.method-action.copy-btn {
+    flex-direction: row-reverse;
+}
+a.method-action.whatsapp-action-btn .icon,
+button.method-action.copy-btn .icon {
+    flex: 0 0 auto;
+    width: 1.15rem;
+    height: 1.15rem;
+    display: block;
+}
 .whatsapp-action-btn {
     border-color: rgba(4, 120, 87, 0.25);
     color: #047857;
@@ -631,8 +668,26 @@ body.lb-open { overflow: hidden; }
     transition-delay: var(--d, 0ms);
 }
 .js .reveal.is-visible { opacity: 1; transform: none; }
-#work-grid .project-card { transition: opacity 0.35s var(--ease-out), transform 0.7s var(--ease-out); }
-#work-grid .project-card:not(.is-shown) { opacity: 0; }
+#work-grid .project-card {
+    transition: opacity 0.4s var(--ease-out), transform 0.48s var(--ease-out);
+}
+#work-grid .project-card.is-filtered-out {
+    display: none !important;
+}
+#work-grid .project-card:not(.is-shown):not(.is-filtered-out) {
+    opacity: 0;
+    transform: translateY(18px);
+    pointer-events: none;
+}
+#work-grid .project-card.is-shown {
+    opacity: 1;
+    transform: translateY(0);
+}
+#work-grid .project-card.is-featured.is-shown {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+}
 
 @media (min-width: 720px) { .work-grid { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 800px) {
@@ -707,8 +762,5 @@ body.lb-open { overflow: hidden; }
     body { background: #fff !important; background-image: none !important; }
 }
 .whatsapp-action-btn {
-    text-decoration: none;
-    padding: 4px;
-    border-radius: 55px;
-    background-color: #e6ffef;
+    border-radius: 13px;
 }
