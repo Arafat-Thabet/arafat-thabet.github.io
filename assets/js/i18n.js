@@ -1,7 +1,6 @@
 const translations = {
     en: {
         metaTitle: 'Arafat Thabet | Software Engineer',
-        metaTitleCv: 'CV | Arafat Thabet, Software Engineer',
         metaDescription:
             'Software Engineer building multi-tenant Laravel SaaS, Vue.js apps, and REST APIs for cloud business systems.',
         skip: 'Skip to main content',
@@ -13,7 +12,7 @@ const translations = {
         navExperience: 'Experience',
         navEducation: 'Education',
         navContact: 'Contact',
-        navCv: 'CV',
+        navCv: 'Resume',
         personName: 'Arafat Thabet',
         role: 'Software Engineer',
         location: 'Sana\'a, Yemen · Remote',
@@ -22,7 +21,8 @@ const translations = {
             'Full-stack developer with 8+ years building cloud business systems, multi-tenant Laravel SaaS, Vue.js applications, and REST APIs for web and mobile.',
         ctaContact: 'Contact me',
         ctaWork: 'View work',
-        ctaCv: 'Open CV / Print',
+        ctaCvOpen: 'Open resume',
+        ctaCvDownload: 'Download CV',
         stackCore: 'Laravel · Multi-tenant SaaS · Vue.js',
         aboutTitle: 'About',
         approachTitle: 'Engineering approach',
@@ -111,6 +111,14 @@ const translations = {
         langEn: 'English — Professional working proficiency',
         contactTitle: 'Let\'s talk',
         contactSubtitle: 'Available for remote full-time roles and freelance projects.',
+        contactBadge: 'Available for projects',
+        contactHeadline: 'Let\'s build something solid together',
+        contactDescription: 'I\'m available for remote full-time roles and freelance projects. Whether you need a Laravel SaaS product, Vue.js front end, or API integration, I can help ship it reliably.',
+        statYears: 'Years building production systems',
+        statWork: 'Delivered projects',
+        statBilingual: 'Bilingual portfolio',
+        contactWhatsappAction: 'Message on WhatsApp',
+        contactSocial: 'Connect on social media',
         contactEmail: 'Email',
         contactPhone: 'Phone / WhatsApp',
         contactWhatsApp: 'WhatsApp',
@@ -122,13 +130,9 @@ const translations = {
         contactTimezone: 'Timezone: GMT+3',
         footerRights: 'All rights reserved.',
         langToggle: 'العربية',
-        cvBack: 'Portfolio',
-        cvPrint: 'Print / Save PDF',
-        cvContact: 'Contact',
     },
     ar: {
         metaTitle: 'عرفات ثابت | مهندس برمجيات',
-        metaTitleCv: 'السيرة | عرفات ثابت، مهندس برمجيات',
         metaDescription:
             'مهندس برمجيات يبني SaaS متعدد المستأجرين على Laravel، تطبيقات Vue.js، وواجهات REST لأنظمة الأعمال السحابية.',
         skip: 'تخطي إلى المحتوى الرئيسي',
@@ -140,7 +144,7 @@ const translations = {
         navExperience: 'الخبرة',
         navEducation: 'التعليم',
         navContact: 'التواصل',
-        navCv: 'السيرة',
+        navCv: 'السيرة الذاتية',
         personName: 'عرفات ثابت',
         role: 'مهندس برمجيات',
         location: 'صنعاء، اليمن · عن بُعد',
@@ -149,12 +153,13 @@ const translations = {
             'مطوّر متكامل بخبرة تزيد عن 8 سنوات في أنظمة الأعمال السحابية، وSaaS متعدد المستأجرين على Laravel، وتطبيقات Vue.js، وواجهات REST للويب والجوال.',
         ctaContact: 'تواصل معي',
         ctaWork: 'عرض الأعمال',
-        ctaCv: 'فتح السيرة / طباعة',
+        ctaCvOpen: 'فتح السيرة',
+        ctaCvDownload: 'تحميل السيرة',
         stackCore: 'Laravel · Multi-tenant SaaS · Vue.js',
         aboutTitle: 'نبذة',
         approachTitle: 'منهج العمل',
         aboutP1:
-            'أصمّم وأشحن أنظمة ويب إنتاجية لمنتجات ERP وHR وSaaS — من خوادم متعددة المستأجرين إلى واجهات Vue.js وواجهات التكامل.',
+            'اطور أنظمة ويب إنتاجية لمنتجات ERP وHR وSaaS — من خوادم متعددة المستأجرين إلى واجهات Vue.js وواجهات التكامل.',
         aboutP2:
             'أعمل مع فرق الاختبار، وأحافظ على أنظمة CodeIgniter القديمة، وأركّز على بنية Laravel قابلة للصيانة.',
         skillsTitle: 'المهارات',
@@ -238,6 +243,14 @@ const translations = {
         langEn: 'الإنجليزية — كفاءة عمل مهنية',
         contactTitle: 'لنتواصل',
         contactSubtitle: 'متاح للعمل عن بُعد دوام كامل ومشاريع مستقلة.',
+        contactBadge: 'متاح للعمل',
+        contactHeadline: 'لنطور شيئاً معاً',
+        contactDescription: 'متاح للعمل عن بُعد دوام كامل ومشاريع مستقلة. سواء كنت تحتاج منتج Laravel SaaS أو واجهة Vue.js أو تكامل API، يمكنني المساعدة في تطويرة بموثوقية.',
+        statYears: 'سنوات في أنظمة إنتاجية',
+        statWork: 'مشاريع منشورة',
+        statBilingual: 'معرض الاعمال',
+        contactWhatsappAction: 'راسلني على واتساب',
+        contactSocial: 'تواصل عبر وسائل التواصل',
         contactEmail: 'البريد',
         contactPhone: 'هاتف / واتساب',
         contactWhatsApp: 'واتساب',
@@ -249,9 +262,6 @@ const translations = {
         contactTimezone: 'التوقيت: GMT+3',
         footerRights: 'جميع الحقوق محفوظة.',
         langToggle: 'English',
-        cvBack: 'المحفظة',
-        cvPrint: 'طباعة / حفظ PDF',
-        cvContact: 'التواصل',
     },
 };
 
@@ -262,8 +272,7 @@ function applyTranslations(lang) {
     document.documentElement.lang = lang;
     document.documentElement.dir = isAr ? 'rtl' : 'ltr';
 
-    const titleKey = document.body && document.body.dataset.page === 'cv' ? 'metaTitleCv' : 'metaTitle';
-    document.title = dict[titleKey] || dict.metaTitle;
+    document.title = dict.metaTitle;
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
         metaDesc.setAttribute('content', dict.metaDescription);
