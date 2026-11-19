@@ -79,6 +79,16 @@ html[dir='rtl'] .scroll-progress span, html[dir='rtl'] #scroll-progress {
     position: fixed; z-index: 50; inset-inline: 0; top: 0.75rem;
     display: flex; justify-content: center; padding-inline: 0.75rem; pointer-events: none;
 }
+@media (max-width: 1039px) {
+    html { scroll-padding-top: 1.25rem; }
+    .site-header {
+        position: relative;
+        top: auto;
+        padding-top: 0.75rem;
+    }
+    .hero { padding-top: 1.25rem; }
+    .year-nav { top: 0.5rem; }
+}
 .nav-shell {
     pointer-events: auto; position: relative; display: flex; align-items: center; gap: 0.25rem;
     width: min(100%, 1120px); max-width: 100%;
@@ -206,6 +216,32 @@ html[dir='rtl'] .portrait-back { transform: rotate(7deg); }
     position: absolute; z-index: 2; inset-inline-start: 0.15rem; bottom: 0.2rem; max-width: calc(100% - 0.4rem);
     margin: 0; padding: 0.45rem 0.75rem; border-radius: 999px; background: rgba(255, 255, 255, 0.92);
     border: 1px solid var(--color-border); box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08); font-size: 0.72rem; font-weight: 600;
+}
+@media (max-width: 959px) {
+    .portrait-stage {
+        display: flex; flex-direction: column; align-items: center;
+        margin-top: 0.15rem; padding: 0.25rem 0 0; overflow: visible;
+    }
+    .portrait-back {
+        inset-inline-start: 50%; inset-inline-end: auto; top: 0.55rem; bottom: auto;
+        width: min(74vw, 16.75rem); height: min(92vw, 21.5rem);
+        transform: translateX(-50%) rotate(-6deg);
+    }
+    html[dir='rtl'] .portrait-back { transform: translateX(-50%) rotate(6deg); }
+    .portrait-frame {
+        width: min(78vw, 18.25rem); margin-inline: auto; padding: 0.35rem;
+        box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06), 0 12px 28px rgba(15, 23, 42, 0.1);
+        transform: none;
+    }
+    .portrait-frame img {
+        width: 100%; max-height: none; aspect-ratio: 4 / 5;
+        object-fit: cover; object-position: center 14%; border-radius: 0.85rem;
+    }
+    .stack-float {
+        position: relative; inset: auto; bottom: auto; max-width: min(100%, 25rem);
+        margin: 0.9rem 0 0; padding: 0.4rem 0.7rem; text-align: center;
+        font-size: 0.68rem; line-height: 1.35;
+    }
 }
 
 .section { padding: 4.25rem 0; }
